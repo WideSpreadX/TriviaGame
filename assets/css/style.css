@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Scheherazade', serif;
+*/
+body {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+/*===========BACKGROUND============*/
+
+/*===========TOP============*/
+.top {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.timer {
+    float: right;
+    font-size: 64pt;
+    margin-right: 140px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+.timer p {
+    text-shadow: 0 0 8px gold;
+}
+.logo {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    float: left;
+}
+.logo h1 {
+    font-size: 66pt;
+    line-height: 150px;
+    text-align: center;
+    color: rgba(220, 20, 60, 0.699);
+    text-shadow: 0 0 15px rgb(228, 80, 109);
+    font-family: 'Fredericka the Great', cursive;
+}
+.logo h1:hover {
+    color: crimson;
+}
+.logo h2 {
+    font-size: 52pt;
+    margin-top: -35px;
+    text-align: center;
+    text-shadow: 0 0 20px crimson;
+    font-family: 'Fredericka the Great', cursive;
+    color: gold;
+}
+/*===========QUESTION AREA============*/
+.question-area {
+    width: 48%;
+    height: 500px;
+    float: left;
+
+}
+.question-area h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 32pt;
+    color: gold;
+    text-shadow: 0 0 8px crimson;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+.question {
+    width: 98%;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border: solid 0.50px rgba(253, 243, 95, 0.568);
+    border-radius: 15px;
+    box-shadow: 0 0 20px gold, inset 0 0 20px gold;
+    cursor: pointer;
+}
+.question:hover {
+    background: rgba(220, 20, 60, 0.582);
+
+}
+.question p {
+    text-align: center;
+    line-height: 75px;
+    font-size: 18pt;
+}
+.question-img {
+    width: 98%;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 100px;
+    padding: 2px;
+    background: rgba(220, 20, 60, 0.788);
+    box-shadow: 0 0 20px crimson;
+    border-radius: 5px;
+}
+.question-img img {
+    border-radius: 5px;
+}
+/*===========ANSWER AREA============*/
+.answer-area {
+    width: 48%;
+    height: 150px;
+    float: right; 
+}
+.answer-area h2 {
+    text-align: center;
+    font-size: 32pt;
+    color: gold;
+    text-shadow: 0 0 10px crimson;
+    padding: 20px;
+}
+.answer-btn {
+    width: 98%;
+    min-width: 120px;
+    height: 100px;
+    margin-left: 2.5%;
+    margin-top: 24px;
+    line-height: 90px;
+}
+button {
+    width: 97%;
+    height: 90px;
+    margin-top: 5px;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 32pt;
+    line-height: 75px;
+    cursor: pointer;
+}
+/*button:hover {
+    background: gold;
+    color: #000;
+    box-shadow: inset 0 0 20px crimson, 0 0 20px crimson;
+}*/
+/*===========BOTTOM============*/
+/*===========OTHER============*/
+/*=========OVERLAY==============*/
+.container {
+    position: relative;
+    width: 90%;
+    background: black;
+    color: #fff;
+  }
+  .container p {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 32pt;
+    text-align: center;
+  }
+  
+  .image {
+    display: block;
+    width: 500%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 90px;
+    background-color: rgba(255, 255, 0, 0.507);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .7s ease;
+    box-shadow: 0 0 20px gold, inset 0 0 20px gold;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: gold;
+    text-shadow: 0 0 10px crimson;
+    font-size: 32pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
